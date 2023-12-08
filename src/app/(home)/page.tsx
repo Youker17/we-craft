@@ -14,12 +14,12 @@ export default function Home() {
     <main>
       <HeroSection />
       <Featured />
-      <OffersSection />
+      {/*<OffersSection />
       <FinancilaFreedom />
       <FinancialFuture />
       <IntroSection />
       <JoinSection />
-      <FAQ />
+      <FAQ /> */}
     </main>
   );
 }

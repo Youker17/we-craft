@@ -37,7 +37,7 @@ export const Inner = styled.div`
 
     div {
       font-weight: 600;
-      font-size: 25em;
+      font-size: 10em;
     }
   }
 
@@ -58,7 +58,7 @@ export const Inner = styled.div`
 `;
 
 export const SecondOverlay = styled.div`
-  background: var(--emerald);
+  background: white;
   position: fixed;
   height: 100vh;
   width: 100vw;

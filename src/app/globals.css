@@ -1,1 +1,15 @@
-@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+/* @import url('https://fonts.cdnfonts.com/css/sf-pro-display'); */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+@font-face {
+    font-family: 'Somar';
+    src: url(../assets/fonts/SomarSans-Regular.ttf);
+}
+
+
+* {
+    font-family: 'Somar', sans-serif;
+}

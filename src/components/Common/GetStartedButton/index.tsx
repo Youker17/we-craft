@@ -9,7 +9,7 @@ const GetStartedButton = ({ padding }: { padding: string }) => {
       }}
       href="/"
     >
-      Get Started
+      Contact Us
     </LinkTo>
   );
 };

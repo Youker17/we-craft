@@ -11,6 +11,7 @@ import {
   BurgerMenu,
 } from './styles';
 import raft_logo from '../../../../public/svgs/raft_logo.svg';
+import logo from '@/assets/WHITE-notext.svg';
 import ic_bars from '../../../../public/svgs/ic_bars.svg';
 import { GetStartedButton } from '@/components';
 import AnimatedLink from '@/components/Common/AnimatedLink';
@@ -24,7 +25,7 @@ const Header = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          <Image src={raft_logo} alt="raft_logo" priority />
+          <Image width={70} src={logo} alt="raft_logo" priority />
           <BurgerMenu onClick={() => setIsOpen(!isOpen)}>
             <motion.div
               variants={menu}
@@ -34,15 +35,14 @@ const Header = () => {
             <Image src={ic_bars} alt="bars" />
           </BurgerMenu>
         </LogoContainer>
-        <Nav className={isOpen ? 'active' : ''}>
+        {/* <Nav className={isOpen ? 'active' : ''}>
           {links.map((link, i) => (
             <AnimatedLink key={i} title={link.linkTo} />
           ))}
         </Nav>
         <CallToActions className={isOpen ? 'active' : ''}>
-          <AnimatedLink title="Login" />
           <GetStartedButton padding="0.5rem 0.75rem" />
-        </CallToActions>
+        </CallToActions> */}
       </Inner>
     </Wrapper>
   );

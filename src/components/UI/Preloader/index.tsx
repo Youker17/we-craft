@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import ic_import from '../../../../public/svgs/ic_import.svg';
+import logo from '@/assets/WHITE-notext.svg'
 
 import { Wrapper, Inner, SecondOverlay } from './styles';
 import { Dispatch, SetStateAction, useEffect, useRef } from 'react';
@@ -11,7 +12,7 @@ const Preloader = ({
 }: {
   setComplete: Dispatch<SetStateAction<boolean>>;
 }) => {
-  const word = ['R', 'a', 'f', 't'];
+  const word = ['W', 'e', ' ', 'C','r','a','f','t'];
 
   const spans = useRef<any>([]); // Create a ref to store the span elements
   const imageRef = useRef(null);
@@ -21,11 +22,12 @@ const Preloader = ({
   useEffect(() => {
     const tl = gsap.timeline();
     tl.to(imageRef.current, {
-      rotate: '360deg',
+      opacity: 1,
       ease: 'back.out(1.7)', // Easing function
       duration: 1.4,
     });
     tl.to(imageRef.current, {
+      opacity: 0,
       y: '-100%', // Move the spans up
       ease: 'back.out(1.7)', // Easing function
     });
@@ -62,7 +64,8 @@ const Preloader = ({
     <>
       <Wrapper ref={wrapperRef}>
         <Inner>
-          <Image ref={imageRef} src={ic_import} alt="import icon" />
+          {/* <Image ref={imageRef} src={ic_import} alt="import icon" /> */}
+          <Image  ref={imageRef} alt='hb' width={100} height={100} src={logo.src}  />
           <div>
             {word.map((t, i) => (
               <div

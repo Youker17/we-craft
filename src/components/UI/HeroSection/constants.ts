@@ -1,5 +1,5 @@
 // For desktop
-export const phrases = ['Building the future of', 'banking.'];
+export const phrases = ['We Craft From ', 'Scratch.'];
 export const paragraphPhrases = [
   "Experience the future of banking with RAFT. We're here to",
   'empower your financial journey.',

@@ -1,13 +1,13 @@
 'use client';
 import { styled } from 'styled-components';
-import hero_background from '../../../../public/images/grid_background.png';
+import hero_background from '@/assets/hero/BG-Hero-01.svg';
 
 export const Wrapper = styled.section`
-  margin-top: 6.25rem;
+  margin-top: 5.25rem;
 `;
 
 export const Inner = styled.div`
-  background: url(${hero_background.src}) no-repeat;
+  // background: url(${hero_background.src}) no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@ export const Inner = styled.div`
   margin: 0 auto;
   text-align: center;
   background-position: top center;
-  background-size: contain;
+  background-size: cover;
 `;
 
 export const Pill = styled.div`
@@ -28,7 +28,7 @@ export const Pill = styled.div`
   border: 0.2px solid #989898;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   span {
     color: var(--light-gray);
@@ -45,7 +45,8 @@ export const HeroTextContainer = styled.div`
 
   h1 {
     font-size: 6rem;
-    font-weight: 400;
+    line-height: 6.5rem;
+    font-weight: 800;
   }
 
   p {

@@ -4,7 +4,7 @@ import { styled } from 'styled-components';
 
 export const Wrapper = styled.section`
   padding: 1rem 0;
-  border-bottom: 0.5px solid #3d3d3d;
+  // border-bottom: 0.5px solid #3d3d3d;
 
   @media (max-width: 768px) {
     padding: 0.75rem 0;
@@ -15,12 +15,14 @@ export const Inner = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  justify-content: center;
   width: 90%;
   max-width: 1440px;
   margin: 0 auto;
 `;
 
 export const LogoContainer = styled.div`
+  margin-top: 3.3rem;
   @media (max-width: 768px) {
     display: flex;
     align-items: center;

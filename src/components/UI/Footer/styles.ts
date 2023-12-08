@@ -146,7 +146,7 @@ export const LinksContainer = styled.ul`
 export const FooterBottom = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
 `;
 
 export const Translator = styled.div`
