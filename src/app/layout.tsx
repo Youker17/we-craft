@@ -1,6 +1,7 @@
 import Layout from '@/components/Layout';
 import './globals.css';
 import type { Metadata } from 'next';
+import PageWrapper from '@/components/UI/ProgressBar';
 
 export const metadata: Metadata = {
   title: 'Raft',
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Layout>{children}</Layout>
+        <PageWrapper>
+          <Layout>{children}</Layout>
+        </PageWrapper>
       </body>
     </html>
   );

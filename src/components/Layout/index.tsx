@@ -5,6 +5,8 @@ import StyledComponentsRegistry from '../../../libs/registry';
 import { GlobalStyles } from './GlobalStyles';
 import { Footer, Header, Preloader } from '..';
 import { useState } from 'react';
+import ChipTabs from '../UI/Nav';
+
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const [complete, setComplete] = useState(false);
@@ -18,6 +20,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <Preloader setComplete={setComplete} />
         <div className={complete ? 'complete' : 'not_complete'}>
           <Header />
+          <ChipTabs />
           {children}
           <Footer />
         </div>
