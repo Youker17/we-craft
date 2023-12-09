@@ -1,0 +1,17 @@
+.progress-bar {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(
+    to right,
+    #000000,   /* Black */
+    #333333,   /* Dark gray */
+    #666666,   /* Medium gray */
+    #999999,   /* Light gray */
+    #CCCCCC    /* Very light gray */
+);
+    transform-origin: 0%;
+  }

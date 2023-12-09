@@ -22,7 +22,6 @@ export const GlobalStyles = styled.createGlobalStyle`
   html,
   body {
     max-width: 100vw;
-    overflow-x: hidden;
     font-family: 'SF Pro Display', sans-serif;
     background-color: var(--Background);
     color: var(--white);
