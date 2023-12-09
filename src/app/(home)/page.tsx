@@ -8,11 +8,13 @@ import {
   JoinSection,
   OffersSection,
 } from '@/components';
+import { HeroSection2 } from '@/components/UI/HeroSection';
 
 export default function Home() {
   return (
     <main>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <HeroSection2 />
       <Featured />
       {/*<OffersSection />
       <FinancilaFreedom />

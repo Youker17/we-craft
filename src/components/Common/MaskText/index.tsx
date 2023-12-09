@@ -26,6 +26,7 @@ const MaskText = ({ phrases, tag }: { phrases: string[]; tag: string }) => {
                 initial="initial"
                 animate={isInView ? 'open' : ''}
                 custom={index}
+                className='font-somarExtraBold '
               >
                 {phrase}
               </motion.h1>
@@ -36,7 +37,7 @@ const MaskText = ({ phrases, tag }: { phrases: string[]; tag: string }) => {
                 animate={isInView ? 'open' : ''}
                 custom={index}
               >
-                {phrase}
+                  {phrase}
               </motion.h2>
             ) : tag === 'h3' ? (
               <motion.h3

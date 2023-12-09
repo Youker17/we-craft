@@ -7,8 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         somar: ['Somar', 'sans-serif'],
+        somarBold: ['SomarBold', 'sans-serif'],
+        somarExtraBold: ['SomarExtraBold', 'sans-serif'],
       },
-
     },
   },
   plugins: [],

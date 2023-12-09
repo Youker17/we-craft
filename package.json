@@ -11,16 +11,22 @@
   },
   "dependencies": {
     "@motionone/utils": "^10.16.3",
+    "@react-three/drei": "^9.90.1",
+    "@react-three/fiber": "^8.15.12",
+    "@splinetool/r3f-spline": "^1.0.2",
     "@studio-freight/react-lenis": "^0.0.36",
+    "@types/three": "^0.159.0",
     "autoprefixer": "^10.4.16",
     "framer-motion": "^10.16.4",
+    "framer-motion-3d": "^10.16.16",
     "gsap": "^3.12.2",
     "next": "13.5.4",
     "postcss-cli": "^11.0.0",
     "react": "^18",
     "react-dom": "^18",
     "styled-components": "^6.1.0",
-    "tailwindcss": "^3.3.6"
+    "tailwindcss": "^3.3.6",
+    "three": "^0.159.0"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -39,7 +39,8 @@
     <linearGradient id="linear-gradient" x1="940.98" y1="-422.34" x2="965.71" y2="829.15" gradientUnits="userSpaceOnUse">
       <stop offset=".22" stop-color="#fff"/>
       <stop offset=".6" stop-color="#fff" stop-opacity="0"/>
-      <stop offset=".96" stop-color="#fff" stop-opacity=".2"/>
+      <stop offset=".75" stop-color="#fff" stop-opacity=".2"/>
+      <stop offset=".9" stop-color="#fff" stop-opacity="0"/>
     </linearGradient>
     <mask id="mask" x="-1415.95" y="0" width="4751.9" height="1205.95" maskUnits="userSpaceOnUse">
       <rect class="cls-1" x="-.07" width="1920.15" height="1080"/>

@@ -4,11 +4,31 @@
 @import "tailwindcss/utilities";
 
 
+
+
+
 @font-face {
     font-family: 'Somar';
     src: url(../assets/fonts/SomarSans-Regular.ttf);
 }
 
+
+@font-face {
+    font-family: 'SomarBold';
+    src: url(../assets/fonts/SomarSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'SomarExtraBold';
+    src: url(../assets/fonts/SomarSans-ExtraBold.ttf);
+}
+.text-stroke {
+    -webkit-text-stroke: .5px #ffffff;
+    text-stroke: .5px #ffffff;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+
+}
 
 * {
     font-family: 'Somar', sans-serif;

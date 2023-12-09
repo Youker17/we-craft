@@ -1,0 +1,537 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "THREE.GLTFExporter"
+  },
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "scene": 0,
+  "nodes": [
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "matrix": [
+        0.9372337011478935,
+        0.2986517904910446,
+        0.18000027074733582,
+        0,
+        -0.2511310133418103,
+        0.9362317349862211,
+        -0.24577093510544654,
+        0,
+        -0.2419218955996677,
+        0.18514115274887774,
+        0.9524686608956119,
+        0,
+        -726.2016499083046,
+        382.16798897227886,
+        40.942255916407376,
+        1
+      ],
+      "name": "Triangle",
+      "mesh": 0
+    },
+    {
+      "matrix": [
+        0.9747290587808706,
+        -0.1528550712656353,
+        -0.16290668849539525,
+        0,
+        0.17474012114370763,
+        0.9760315477608055,
+        0.12972396786380289,
+        0,
+        0.13917310096006547,
+        -0.15491205558001012,
+        0.9780762255597134,
+        0,
+        -184.50290296877836,
+        383.5,
+        114.5,
+        1
+      ],
+      "name": "Cube 2",
+      "mesh": 1
+    },
+    {
+      "matrix": [
+        0.44021076290662814,
+        0.29347384193775206,
+        -0.8485797477665018,
+        0,
+        -0.554700196225229,
+        0.8320502943378437,
+        0,
+        0,
+        0.706061028898251,
+        0.4707073525988339,
+        0.5290674925569896,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Directional Light",
+      "extensions": {
+        "KHR_lights_punctual": {
+          "light": 0
+        }
+      }
+    },
+    {
+      "matrix": [
+        0.9969326907949725,
+        5.421010862427522e-20,
+        -0.07826372099699638,
+        0,
+        0.0005916132035543519,
+        0.9999714286382524,
+        0.007536040139874121,
+        0,
+        0.07826148489591206,
+        -0.0075592266252847455,
+        0.9969042070704258,
+        0,
+        -270.3348195568737,
+        342.65789429189914,
+        2406.126740712019,
+        1
+      ],
+      "camera": 0
+    },
+    {
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "name": "Default Ambient Light"
+    },
+    {
+      "name": "Scene 1",
+      "children": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 216,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 216,
+      "byteLength": 216,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 432,
+      "byteLength": 144,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 576,
+      "byteLength": 96,
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 672,
+      "byteLength": 288,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 960,
+      "byteLength": 288,
+      "target": 34962,
+      "byteStride": 12
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1248,
+      "byteLength": 192,
+      "target": 34962,
+      "byteStride": 8
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1440,
+      "byteLength": 72,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1512,
+      "uri": "data:application/octet-stream;base64,IqTQQo4PQ8IAACFDIqTQQo4PQ8IAAAAAIqTQQo4PQ8IAACFDIqTQQo4PQ8IAAAAAYT9gwgV54kIAACFDYT9gwgV54kIAAAAAYT9gwgV54kIAACFDYT9gwgV54kIAAAAAAABewvVBQMIAACFDAABewvVBQMIAAAAAAABewvVBQMIAACFDAABewvVBQMIAAAAAIqTQQo4PQ8IAACFDIqTQQo4PQ8IAAAAAYT9gwgV54kIAACFDYT9gwgV54kIAAAAAAABewvVBQMIAACFDAABewvVBQMIAAAAAGe01P6IbND8AAAAAGe01P6IbND8AAACA/q2Pu1//f78AAAAA/q2Pu1//f78AAACAmv9/vzpLZLsAAAAAmv9/vzpLZLsAAACAGe01P6IbND8AAAAAGe01P6IbND8AAACA/q2Pu1//f78AAAAA/q2Pu1//f78AAACAmv9/vzpLZLsAAAAAmv9/vzpLZLsAAACAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIC/AACAPwAAAAAAAAAAAACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAACAPwAAgD8AAAAAAAAAAAAAgD8AAIA/AAAAADeaZTsnv407J7+NOzeaZTs3mmU7J7+NOye/jTs3mmU7AACAPwAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD83mmU7J7+NOzeaZTsnv407BgAAAAAAAAABAAAABgAAAAEAAAAHAAAACgAAAAQAAAAFAAAACgAAAAUAAAALAAAAAgAAAAgAAAAJAAAAAgAAAAkAAAADAAAADAAAAA4AAAAQAAAAEQAAAA8AAAANAAAAAAChQgAAoUIAAKFCAAChQgAAoUIAAKHCAAChQgAAocIAAKFCAAChQgAAocIAAKHCAAChwgAAoUIAAKHCAAChwgAAoUIAAKFCAAChwgAAocIAAKHCAAChwgAAocIAAKFCAAChwgAAoUIAAKHCAAChQgAAoUIAAKHCAAChwgAAoUIAAKFCAAChQgAAoUIAAKFCAAChwgAAocIAAKFCAAChQgAAocIAAKFCAAChwgAAocIAAKHCAAChQgAAocIAAKHCAAChwgAAoUIAAKFCAAChQgAAoUIAAKFCAAChwgAAocIAAKFCAAChQgAAocIAAKFCAAChQgAAoUIAAKHCAAChwgAAoUIAAKHCAAChQgAAocIAAKHCAAChwgAAocIAAKHCAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAACAvwAAAAAAAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAgL8AAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAgD8AAIA/AACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAAAAAAAgD8AAIA/AACAPwAAAAAAAAAAAACAPwAAAAAAAAAAAACAPwAAgD8AAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AACAPwAAgD8AAAAAAAAAAAAAgD8AAAAAAAACAAEAAgADAAEABAAGAAUABgAHAAUACAAKAAkACgALAAkADAAOAA0ADgAPAA0AEAASABEAEgATABEAFAAWABUAFgAXABUA"
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 18,
+      "max": [
+        104.32057189941406,
+        113.23636627197266,
+        161
+      ],
+      "min": [
+        -56.061893463134766,
+        -48.76519012451172,
+        0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 18,
+      "max": [
+        0.7106490731239319,
+        0.7035466432571411,
+        1
+      ],
+      "min": [
+        -0.9999939203262329,
+        -0.9999904036521912,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 18,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5125,
+      "count": 24,
+      "max": [
+        17
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        80.5,
+        80.5,
+        80.5
+      ],
+      "min": [
+        -80.5,
+        -80.5,
+        -80.5
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 24,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 36,
+      "max": [
+        23
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "extras": {
+            "parameters": {
+              "width": 160.38246110680626,
+              "subdivisions": 12,
+              "roundness": 0,
+              "extrudeBevelSize": 0,
+              "extrudeBevelSegments": 1,
+              "windingRule": 0,
+              "depth": 161,
+              "spikes": 5,
+              "cornerRadius": 0,
+              "isRect": false,
+              "height": 162.00155440385723,
+              "type": "VectorGeometry",
+              "shape": {
+                "isClosed": true,
+                "points": [
+                  {
+                    "id": "ffe687ee-f294-4d56-beae-85a7b229ca28",
+                    "fi": 0,
+                    "data": {
+                      "position": [
+                        -56.061892673044326,
+                        113.23636370676954
+                      ],
+                      "controlNext": {
+                        "position": [
+                          -56.061892673044326,
+                          113.23636370676954
+                        ]
+                      },
+                      "controlPrevious": {
+                        "position": [
+                          -56.061892673044326,
+                          113.23636370676954
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "id": "321f1648-8bab-460a-ae4d-0195ee0afce8",
+                    "fi": 1,
+                    "data": {
+                      "position": [
+                        104.32056843376193,
+                        -48.76519069708768
+                      ],
+                      "controlNext": {
+                        "position": [
+                          104.32056843376193,
+                          -48.76519069708768
+                        ]
+                      },
+                      "controlPrevious": {
+                        "position": [
+                          104.32056843376193,
+                          -48.76519069708768
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  },
+                  {
+                    "id": "780f7516-a224-4c57-b415-adfb3d9ad9b3",
+                    "fi": 2,
+                    "data": {
+                      "position": [
+                        -55.5,
+                        -48.06440991003634
+                      ],
+                      "controlNext": {
+                        "position": [
+                          -55.5,
+                          -48.06440991003634
+                        ]
+                      },
+                      "controlPrevious": {
+                        "position": [
+                          -55.5,
+                          -48.06440991003634
+                        ]
+                      },
+                      "areControlsDirectionsMirrored": true,
+                      "roundness": 0
+                    }
+                  }
+                ],
+                "roundness": 0,
+                "shapeHoles": []
+              }
+            },
+            "shape": {
+              "points": [
+                -56.061892673044326,
+                113.23636370676954,
+                -56.061892673044326,
+                113.23636370676954,
+                -56.061892673044326,
+                113.23636370676954,
+                0,
+                104.32056843376193,
+                -48.76519069708768,
+                104.32056843376193,
+                -48.76519069708768,
+                104.32056843376193,
+                -48.76519069708768,
+                0,
+                -55.5,
+                -48.06440991003634,
+                -55.5,
+                -48.06440991003634,
+                -55.5,
+                -48.06440991003634,
+                0
+              ],
+              "shapeHoles": [],
+              "isClosed": true,
+              "roundness": 0
+            },
+            "type": "VectorGeometry"
+          },
+          "indices": 3
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "mode": 4,
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "extras": {
+            "parameters": {
+              "width": 161,
+              "widthSegments": 1,
+              "heightSegments": 1,
+              "depthSegments": 1,
+              "cornerRadius": 0,
+              "cornerSegments": 8,
+              "height": 161,
+              "depth": 161,
+              "type": "CubeGeometry"
+            },
+            "type": "CubeGeometry"
+          },
+          "indices": 7
+        }
+      ]
+    }
+  ],
+  "extensions": {
+    "KHR_lights_punctual": {
+      "lights": [
+        {
+          "name": "Directional Light",
+          "color": [
+            1,
+            1,
+            1
+          ],
+          "intensity": 1.623,
+          "type": "directional"
+        }
+      ]
+    }
+  },
+  "cameras": [
+    {
+      "type": "orthographic",
+      "orthographic": {
+        "xmag": 9.429025253029062,
+        "ymag": 4.622432301777919,
+        "zfar": 100000,
+        "znear": 0
+      }
+    }
+  ],
+  "extensionsUsed": [
+    "KHR_lights_punctual"
+  ]
+}

@@ -37,6 +37,16 @@ export const Pill = styled.div`
   }
 `;
 
+export const HeroTextSloganDown = styled.div`
+
+  h1 {
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--light-gray);
+  }
+`;
+
 export const HeroTextContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -46,7 +56,7 @@ export const HeroTextContainer = styled.div`
   h1 {
     font-size: 6rem;
     line-height: 6.5rem;
-    font-weight: 800;
+    // font-weight: 800;
   }
 
   p {
