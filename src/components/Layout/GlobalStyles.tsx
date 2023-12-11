@@ -41,6 +41,10 @@ export const GlobalStyles = styled.createGlobalStyle`
     }
   }
 
+  body{
+    overflow-x: hidden;m_çhu
+  }
+
   a {
     color: inherit;
     text-decoration: none;

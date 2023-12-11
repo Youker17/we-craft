@@ -15,6 +15,31 @@
 
   src: url(../assets/fonts/SomarSans-Regular.ttf);
 }
+.noise::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: .05;  
+  z-index: 1000;
+  pointer-events: none;
+  background: url(../../public/noise.gif) ;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
 
 ::before,
 ::after {

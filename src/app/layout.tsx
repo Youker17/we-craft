@@ -3,6 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import PageWrapper from '@/components/UI/ProgressBar';
 
+
 export const metadata: Metadata = {
   title: 'Raft',
   description: 'Building the future of banking',
