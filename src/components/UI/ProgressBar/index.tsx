@@ -1,11 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.css"
 import { motion, useScroll } from "framer-motion";
 
 const PageWrapper = ({ children }: { children: React.ReactNode }) => {
   const { scrollYProgress } = useScroll();
+
+  
 
   return (
     <>

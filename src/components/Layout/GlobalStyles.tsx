@@ -4,7 +4,7 @@ const styled = { createGlobalStyle };
 
 export const GlobalStyles = styled.createGlobalStyle`
   :root {
-    --Background: #030712;
+    --Background: #020202;
     --white: #fff;
     --light-gray: #dcdcdc;
     --link-color: #bdbdbd;

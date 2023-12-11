@@ -25,7 +25,7 @@ const Header = () => {
     <Wrapper>
       <Inner>
         <LogoContainer>
-          {/* <Image width={70} src={logo} alt="raft_logo" priority /> */}
+          <Image width={70} src={logo} alt="raft_logo" priority />
           <BurgerMenu onClick={() => setIsOpen(!isOpen)}>
             <motion.div
               variants={menu}
@@ -43,6 +43,12 @@ const Header = () => {
         <CallToActions className={isOpen ? 'active' : ''}>
           <GetStartedButton padding="0.5rem 0.75rem" />
         </CallToActions> */}
+        {/* <GetStartedButton padding="0.5rem 0.75rem" /> */}
+        <div className="group relative flex h-14 w-52 cursor-pointer items-center justify-center gap-4 rounded-full border-2 border-solid border-black">
+          <div className="absolute left-10 z-0 h-2 w-2 rounded-lg bg-white transition-all duration-300 ease-in-out group-hover:left-0 group-hover:h-full group-hover:w-full"></div>
+          <p className="absolute mix-blend-difference right-10 z-10  uppercase transition-all duration-300 ease-in-out group-hover:right-8 ">Contact Us</p>
+        </div>
+
       </Inner>
     </Wrapper>
   );

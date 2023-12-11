@@ -4,7 +4,7 @@ import { Wrapper, Inner, Pill, HeroTextContainer } from './styles';
 import ic_chevron_right from '../../../../public/svgs/ic_chevron_right.svg';
 import { GetStartedButton } from '@/components';
 import MaskText from '@/components/Common/MaskText';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import hero_background from '@/assets/hero/BG-Hero-01.svg';
 import { useIsMobile } from '../../../../libs/useIsMobile';
 import {
@@ -17,6 +17,7 @@ import Scene from '@/components/3d/HeroSectionObjects';
 import { Canvas } from '@react-three/fiber';
 import { div } from 'three/examples/jsm/nodes/Nodes.js';
 import logo from '@/assets/WHITE-notext.svg';
+import { useRef } from 'react';
 
 const HeroSection = () => {
   const isMobile = useIsMobile();
@@ -84,25 +85,92 @@ export default HeroSection;
 
 
 const HeroSection2 = () => {
+  const description = useRef(null)
+  const isInView = useInView(description, { once: true })
   return (
-    <div style={
-      {
-        maxWidth: '1440px',
-        width: '90 %',
-      }
-    } className='h-screen bg-black/30  mx-auto border border-white/60 p-10 rounded-3xl ' >
-      <div className='flex flex-row justify-between items-start '>
-        <div className='flex flex-col'>
-          <h1 className='text-2xl text-white/80 font-bold'>INTRODUCING</h1>
-          <h1 className='text-9xl font-bold'><MaskText phrases={["WE CRAFT"]} tag="h1" /></h1>
-          <h1 className='text-9xl font-somarExtraBold text-transparent text-stroke'>STUDIO</h1>
-          <p className='text-2xl w-[60%]'>We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.</p>
+    <>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        style={
+          {
+            maxWidth: '1440px',
+            width: '90%',
+          }
+        } className='h-screen   mx-auto border-[.2px] border-white/10 p-10 rounded-3xl ' >
+        <div className='flex flex-row justify-between items-start '>
+          <div className='flex flex-col'>
+            <h1 className='text-2xl text-white/80 font-bold'>INTRODUCING</h1>
+            <h1 className='text-9xl font-bold'><MaskText phrases={["WE CRAFT"]} tag="h1" /></h1>
+            <h1 className='text-9xl font-somarExtraBold text-transparent text-stroke relative bg-clip-text '>
+              <div className='w-10 h-full absolut bg-white'></div>
+              STUDIO.
+            </h1>
+            <p className='text-2xl w-[60%]'>We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.</p>
+
+            {/* <div className='w-60 flex flex-row z-50 mt-5'>
+              <GetStartedButton padding='' />
+            </div> */}
+          </div>
+          <div className='flex flex-col  h-full'>
+            {/* <Image alt='logo' width={200} height={200} src={logo.src} /> */}
+          </div>
         </div>
-        <div className='flex flex-col  h-full'>
-          <Image alt='logo' width={200} height={200} src={logo.src} />
+      </motion.div>
+      <motion.div
+        initial={{
+          y: 10,
+          opacity: 0
+        }}
+        animate={isInView ? {
+          y: 0,
+          opacity: 1
+        } :
+          {
+            y: 10,
+            opacity: 0
+          }
+        }
+        ref={description}
+        style={
+          {
+            maxWidth: '1440px',
+            width: '90%',
+          }
+        } className='h-screen bg-black/30  mx-auto border-[.5px] border-white/25 p-10 rounded-3xl '
+      >
+        <div className='flex flex-row justify-between items-start '>
+          <div className='flex flex-col'>
+            <h2 className='text-2xl text-white/80 font-bold'>
+              <div className='flex flex-row items-end w-40 gap-2'>
+                INTRODUCING
+                <div></div>
+                <svg className='text-white' viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="50" r="50" />
+                </svg>
+                <span className='text-9xl  text-white'>.</span>
+              </div>
+            </h2>
+            <h1 className='text-9xl font-bold'><MaskText phrases={["WE CRAFT"]} tag="h1" /></h1>
+            <h1 className='text-9xl font-somarExtraBold text-transparent text-stroke relative bg-clip-text '>
+              <div className='w-10 h-full absolut bg-white'></div>
+              STUDIO.
+            </h1>
+            <p className='text-2xl w-[60%]'>We are a team of passionate people whose goal is to improve everyone's life through disruptive products. We build great products to solve your business problems.</p>
+
+          </div>
+          <div className='flex flex-col  h-full'>
+            <Image alt='logo' width={200} height={200} src={logo.src} />
+          </div>
+        </div>
+      </motion.div>
+      <div className=' h-[200%] w-full  absolute left-0 top-0 '>
+        <div className='h-1/2 sticky top-4'>
+          <Scene />
         </div>
       </div>
-    </div >
+    </>
   )
 
 }

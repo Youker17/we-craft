@@ -20,7 +20,7 @@ export default function Home() {
     <main>
       {/* <HeroSection /> */}
       <HeroSection2 />
-      <FlareCursor />
+      {/* <FlareCursor /> */}
       {/* <HeroSection /> */}
       <Featured />
       <Cards />
