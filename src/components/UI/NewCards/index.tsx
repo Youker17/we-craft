@@ -7,7 +7,7 @@ import { useRef } from "react";
 import { Header } from "../OffersSection/styles";
 import "./style.css";
 
-function Cards() {
+function NewCards() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
     target: container,
@@ -32,8 +32,7 @@ function Cards() {
         <ul id="cards">
         
           <li  className="card" id="card1">
-            <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-            <div className=" flex justify-between items-center  absolute top-5 z-50 w-[90%] ">
+          <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
               <button className="cta w-fit flex justify-center mb-2  text-white ">
                 <span className="hover-underline-animation ">
                   {" "}
@@ -57,6 +56,7 @@ function Cards() {
               </button>
               <p className=" text-[1em] mr-4">2023</p>
             </div>
+            <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
             <div className="noise"></div>
               <Image
                 src={
@@ -70,8 +70,7 @@ function Cards() {
             </div>
           </li>
           <li  className="card" id="card2">
-            <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-            <div className=" flex justify-between items-center  absolute top-5 z-50 w-[90%] ">
+          <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
               <button className="cta w-fit flex justify-center mb-2  text-white ">
                 <span className="hover-underline-animation ">
                   {" "}
@@ -95,6 +94,7 @@ function Cards() {
               </button>
               <p className=" text-[1em] mr-4">2023</p>
             </div>
+            <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
             <div className="noise"></div>
               <Image
                 src={
@@ -108,8 +108,7 @@ function Cards() {
             </div>
           </li>
           <li  className="card" id="card3">
-            <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-            <div className=" flex justify-between items-center  absolute top-5 z-50 w-[90%] ">
+          <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
               <button className="cta w-fit flex justify-center mb-2  text-white ">
                 <span className="hover-underline-animation ">
                   {" "}
@@ -133,6 +132,7 @@ function Cards() {
               </button>
               <p className=" text-[1em] mr-4">2023</p>
             </div>
+            <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
             <div className="noise"></div>
               <Image
                 src={
@@ -146,8 +146,7 @@ function Cards() {
             </div>
           </li>
           <li  className="card" id="card4">
-            <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-            <div className=" flex justify-between items-center  absolute top-5 z-50 w-[90%] ">
+          <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
               <button className="cta w-fit flex justify-center mb-2  text-white ">
                 <span className="hover-underline-animation ">
                   {" "}
@@ -171,6 +170,7 @@ function Cards() {
               </button>
               <p className=" text-[1em] mr-4">2023</p>
             </div>
+            <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
             <div className="noise"></div>
               <Image
                 src={
@@ -315,4 +315,4 @@ function Cards() {
   );
 }
 
-export default Cards;
+export default NewCards;

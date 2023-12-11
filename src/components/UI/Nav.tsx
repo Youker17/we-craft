@@ -34,16 +34,16 @@ const Chip = ({
       onClick={() => setSelected(text)}
       className={`${
         selected
-          ? "text-white"
+          ? "text-black font-bold"
           : "text-slate-300 hover:text-white "
-      } text-md transition-colors px-2.5 py-0.5 rounded-md relative`}
+      } text-md transition-colors px-2.5 py-0.5 rounded-3xl relative`}
     >
       <span className="relative z-10">{text}</span>
       {selected && (
         <motion.span
           layoutId="pill-tab"
-          transition={{ type: "spring", duration: 0.5 }}
-          className="absolute inset-0 z-0 bg-gradient-to-r from-gray-700  to-black rounded-md"
+          transition={{ type: "spring", duration: 1.5 }}
+          className="absolute inset-0 z-0 bg-white rounded-3xl"
         ></motion.span>
       )}
     </button>
