@@ -1,160 +1,168 @@
 "use client";
+import { XMark } from "@/assets/Icons";
+import { MaskText } from "@/components";
+import gsap from "gsap";
+import { Flip } from "gsap/Flip";
+import { useEffect, useState } from "react";
+import { twMerge } from "tailwind-merge";
+import { Header } from "../OffersSection/styles";
+import "./style.css";
+import Link from "next/link";
 
+function Services() {
+  const [active, setActive] = useState(1);
 
+  useEffect(() => {
+    gsap.registerPlugin(Flip);
 
-import React, { useState } from 'react';
-import { motion, useAnimation, Variants } from 'framer-motion';
-import './style.css'
+    const activeClass = "is-active";
+    const inactiveClass = "is-inactive";
+    const cards = document.querySelectorAll(".service__card");
 
-interface GridItemVariants {
-  opacity: number;
-  scale: number;
-  x: number;
-  y: number;
-  borderRadius: number;
-  transition: {
-    duration: number;
-    ease: string;
-  };
-}
+    cards.forEach((card, idx) => {
+      card.addEventListener("click", () => {
+        const state = Flip.getState(cards);
+        const isCardActive = card.classList.contains(activeClass);
 
-interface ClickedGridItem extends Omit<GridItemVariants, 'transition'> {}
+        cards.forEach((otherCard, otherIdx) => {
+          otherCard.classList.remove(activeClass);
+          otherCard.classList.remove(inactiveClass);
+          if (!isCardActive && idx !== otherIdx)
+            otherCard.classList.add(inactiveClass);
+        });
 
-interface LargeItemVariants {
-  opacity: number;
-  scale: number;
-  x: number;
-  y: number;
-  borderRadius: number;
-  transition: {
-    duration: number;
-    ease: string;
-  };
-}
+        card.classList.add(activeClass);
 
-interface ClickedLargeItem extends Omit<LargeItemVariants, 'transition'> {}
-
-const initialGridItem: GridItemVariants = {
-  opacity: 1,
-  scale: 1,
-  x: 0,
-  y: 0,
-  borderRadius: 0,
-  transition: {
-    duration: 0.3,
-    ease: 'easeInOut',
-  },
-};
-
-const initialLargeItem: LargeItemVariants = {
-  opacity: 1,
-  scale: 1.2,
-  x: 0,
-  y: -100,
-  borderRadius: 10,
-  transition: {
-    duration: 0.3,
-    ease: 'easeInOut',
-  },
-};
-
-const clickedGridItem: ClickedGridItem = {
-  opacity: 0,
-  scale: 0.5,
-  x: 0,
-  y: 100,
-  borderRadius: 0,
-};
-
-const clickedLargeItem: ClickedLargeItem = {
-  opacity: 1,
-  scale: 1,
-  x: 0,
-  y: 0,
-  borderRadius: 0,
-};
-
-const swappedGridItem: GridItemVariants = {
-  opacity: 1,
-  scale: 1.2,
-  x: 0,
-  y: -100,
-  borderRadius: 10,
-  transition: {
-    duration: 0.3,
-    ease: 'easeInOut',
-  },
-};
-
-const swappedLargeItem: LargeItemVariants = {
-  opacity: 0,
-  scale: 0.5,
-  x: 0,
-  y: 100,
-  borderRadius: 0,
-  transition: {
-    duration: 0.3,
-    ease: 'easeInOut',
-  },
-};
-
-interface CardSwappingProps {}
-
-const CardSwapping: React.FC<CardSwappingProps> = () => {
-  const [isCard2Expanded, setIsCard2Expanded] = useState(false);
-  const animateGridItem = useAnimation();
-  const animateLargeItem = useAnimation();
-
-  const setGridItemVariants = (variants: GridItemVariants, itemIndex: number) => {
-    if (itemIndex === 1) {
-      animateGridItem.start({ ...variants });
-    }
-    // Add other conditions as needed for different items
-  };
-
-  const setLargeItemVariants = (variants: LargeItemVariants, itemIndex: number) => {
-    if (itemIndex === 1) {
-      animateLargeItem.start({ ...variants });
-    }
-    // Add other conditions as needed for different items
-  };
-
-  const handleClick = (itemIndex: number) => {
-    // Update state based on clicked item index
-    if (itemIndex === 1) {
-      // Set clicked variants for item 1 and swapped variants for item 2
-      setGridItemVariants(clickedGridItem, itemIndex);
-      setLargeItemVariants(swappedLargeItem, 2);
-    } else if (itemIndex === 2) {
-      // Set clicked variants for item 2 and swapped variants for item 1
-      setGridItemVariants(clickedGridItem, itemIndex);
-      setLargeItemVariants(swappedLargeItem, 1);
-    }
-  };
+        Flip.from(state, {
+          duration: 0.5,
+          ease: "expo.out",
+          absolute: true,
+        });
+      });
+    });
+  }, [active]);
 
   return (
-    <div className="grid-container">
-      <motion.div
-        grid-area="span 3/span 1/span 3/span 1"
-        variants={initialGridItem as Variants}
-        animate={animateGridItem}
-        onClick={() => handleClick(1)}
-        className={`item1 bg-red-500`}
-      >
-        1
-      </motion.div>
-      <motion.div
-        grid-area="span 1/span 1/span 1/span 1"
-        variants={initialLargeItem as Variants}
-        animate={animateLargeItem}
-        onClick={() => handleClick(2)}
-        className={`item2 bg-red-500`}
-      >
-        2
-      </motion.div>
-    </div>
+    <>
+      <Header className="">
+        <MaskText phrases={["Services"]} tag="h1" />
+        <MaskText
+          phrases={[
+            "Experience the future of banking with RAFT. We're",
+            "here to empower your financial journey.",
+          ]}
+          tag="p"
+        />
+      </Header>
+      <div className="service__wrapper w-6/6 lg:w-5/6">
+        <div
+          onClick={() => setActive(1)}
+          className={twMerge(
+            "service__card group/card",
+            active == 1 && "is-active"
+          )}
+        >
+          <div className="flex justify-between items-center text-[#e5e4e0]">
+            <div className=" text-[2.25rem] font-normal uppercase ">Design</div>
+            <XMark active={1 == active} />
+          </div>
+          <div
+            className={twMerge(
+              "mt-10 select-none flex justify-between flex-col",
+              active != 1 && " text-transparent"
+            )}
+          >
+            <div className="flex flex-col mt-10">
+              <div className=" flex gap-4 flex-col">
+                <h1 className=" leading-normal uppercase text-3xl font-normal">
+                  Digital-First Branding
+                </h1>
+                <p className=" font-[1.7rem]">
+                  In today&apos;s digital world, your brand has to shine across
+                  screens. We build brands that not only look great but also
+                  resonate with your target audience. From logo design to
+                  content strategy, our digital-first approach ensures
+                  consistency, engagement, and a distinctive presence that sets
+                  you apart.
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col mt-10">
+              <div className=" flex gap-4 flex-col">
+                <h1 className=" leading-normal uppercase text-3xl font-normal">
+                  Functional & Fun Interface Design
+                </h1>
+                <p className={twMerge("font-[1.7rem]")}>
+                  In today&apos;s digital world, your brand has to shine across
+                  screens. We build brands that not only look great but also
+                  resonate with your target audience. From logo design to
+                  content strategy, our digital-first approach ensures
+                  consistency, engagement, and a distinctive presence that sets
+                  you apart.
+                </p>
+              </div>
+            </div>
+          </div>
+          <Link
+            href="#_"
+            className="relative inline-flex mt-32 items-center justify-start  w-fit px-5 py-3 overflow-hidden font-bold rounded-full group/btn"
+          >
+            <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+            <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover/btn:-translate-x-8"></span>
+            <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover/btn:text-gray-900">
+              Contact Us
+            </span>
+            <span className="absolute inset-0 border-2 border-white rounded-full"></span>
+          </Link>
+        </div>
+        <div
+          onClick={() => setActive(2)}
+          className={twMerge(
+            "service__card group/card",
+            active == 2 && "is-active"
+          )}
+        >
+          <div className="flex justify-between items-center">
+            <div className=" text-[2.25rem] font-normal uppercase text-[#e5e4e0]">
+              Development
+            </div>
+            <XMark active={2 == active} />
+          </div>
+          <div className=""></div>
+        </div>
+        <div
+          onClick={() => setActive(3)}
+          className={twMerge(
+            "service__card group/card",
+            active == 3 && "is-active"
+          )}
+        >
+          <div className="flex justify-between items-center">
+            <div className=" text-[2.25rem] font-normal uppercase text-[#e5e4e0]">
+              Motion & 3D
+            </div>
+            <XMark active={3 == active} />
+          </div>
+          <div className=""></div>
+        </div>
+        <div
+          onClick={() => setActive(4)}
+          className={twMerge(
+            "service__card group/card",
+            active == 4 && "is-active"
+          )}
+        >
+          <div className="flex justify-between items-center">
+            <div className=" text-[2.25rem] font-normal uppercase text-[#e5e4e0]">
+              Strategy
+            </div>
+            <XMark active={4 == active} />
+          </div>
+          <div className=""></div>
+        </div>
+      </div>
+    </>
   );
-};
+}
 
-export default CardSwapping;
-
+export default Services;

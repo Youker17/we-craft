@@ -29,22 +29,11 @@
   
   .card {
     position: sticky !important;
-    top: 10px !important;
-    padding-top: calc(var(--index) * 1.5em);
+    top: 20px !important;
+    padding-top: 5px !important;
   }
   
-  #card1 .card-body {
-    background-color: #52B2CF;
-  }
-  #card2 .card-body {
-    background-color: #E5A36F;
-  }
-  #card3 .card-body {
-    background-color: #9CADCE;
-  }
-  #card4 .card-body {
-    background-color: #D4AFB9;
-  }
+ 
   
   .card-body {
     /* box-sizing: border-box !important;

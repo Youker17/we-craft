@@ -9,28 +9,30 @@ import {
   OffersSection,
 } from '@/components';
 import Cards from '@/components/UI/Cards';
-import FlareCursor from '@/components/UI/Cursor/Cursor';
 import NewCards from '@/components/UI/NewCards';
-import CardSwapping from '@/components/UI/Service';
+import Services from '@/components/UI/Service';
 import YourComponent from '@/components/UI/Slider';
 import { CardSpotlightEffect } from '@/components/UI/SpotlightEffect';
 import Testimonials from '@/components/UI/Testimonials/Testimonials';
+import Contact from "@/components/UI/Contact"
 
 
 
 
 export default function Home() {
   return (
+    
+
     <main>
-      <FlareCursor />
+      {/* <FlareCursor /> */}
       <HeroSection />
       <Featured />
       <Cards />
+      <Services />
       <Testimonials />
       {/* <CardSpotlightEffect /> */}
-      {/* <YourComponent /> */}
-      {/* <CardSwapping /> */}
-      <NewCards />
+      {/* <NewCards /> */}
+      {/* <Contact /> */}
       {/*<OffersSection />
       <FinancilaFreedom />
       <FinancialFuture />

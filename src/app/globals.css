@@ -26,6 +26,22 @@
   background: url(../../public/noise.gif) ;
 }
 
+
+.pulse__animation:hover {
+  animation: pulse 800ms ease-in-out;
+}
+
+@keyframes pulse {
+  from, to {
+    scale: 1;
+  }
+  
+  50% {
+    scale: 1.08;
+  }
+}
+
+
 *,
 ::before,
 ::after {
