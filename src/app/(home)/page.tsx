@@ -1,20 +1,9 @@
 import {
-  FAQ,
-  Featured,
-  FinancialFuture,
-  FinancilaFreedom,
-  HeroSection,
-  IntroSection,
-  JoinSection,
-  OffersSection,
+  Featured
 } from '@/components';
-import { HeroSection2 } from '@/components/UI/HeroSection';
 import Cards from '@/components/UI/Cards';
-import FlareCursor from '@/components/UI/Cursor/Cursor';
-import NewCards from '@/components/UI/NewCards';
-// import CardSwapping from '@/components/UI/Service';
-import YourComponent from '@/components/UI/Slider';
-import { CardSpotlightEffect } from '@/components/UI/SpotlightEffect';
+import { HeroSection2 } from '@/components/UI/HeroSection';
+import Services from '@/components/UI/Service';
 import Testimonials from '@/components/UI/Testimonials/Testimonials';
 
 
@@ -22,6 +11,8 @@ import Testimonials from '@/components/UI/Testimonials/Testimonials';
 
 export default function Home() {
   return (
+
+
     <main>
       {/* <HeroSection /> */}
       <HeroSection2 />
@@ -29,11 +20,11 @@ export default function Home() {
       {/* <HeroSection /> */}
       <Featured />
       <Cards />
+      <Services />
       <Testimonials />
       {/* <CardSpotlightEffect /> */}
-      {/* <YourComponent /> */}
-      {/* <CardSwapping /> */}
-      <NewCards />
+      {/* <NewCards /> */}
+      {/* <Contact /> */}
       {/*<OffersSection />
       <FinancilaFreedom />
       <FinancialFuture />

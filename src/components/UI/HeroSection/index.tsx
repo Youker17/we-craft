@@ -157,7 +157,7 @@ const HeroSection2 = () => {
                 <div className='w-10 h-full absolut bg-white'></div>
                 STUDIO.
               </h1>
-              <p className='text-2xl w-[60%]'>We are a team of passionate people whose goal is to improve everyone&apos;s life through disruptive products. We build great products to solve your business problems.</p>
+              <p className='text-2xl w-[60%]'>We are a team of passionate people whose goal is to improve everyones life through disruptive products. We build great products to solve your business problems.</p>
 
             </div>
             <div className='flex flex-col  h-full'>

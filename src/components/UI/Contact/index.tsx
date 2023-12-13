@@ -30,34 +30,32 @@ function Cards() {
       </Header>
       <div className="cards-container">
         <ul id="cards">
-
-          <li className="card" id="card1">
-            <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-              <div className=" flex justify-between items-center  absolute top-5 z-50 w-[90%] ">
-                <button className="cta w-fit flex justify-center mb-2  text-white ">
-                  <span className="hover-underline-animation ">
-                    {" "}
-                    View Project{" "}
-                  </span>
-                  <svg
-                    className=" fill-white mt-1"
-                    viewBox="0 0 46 16"
-                    height="10"
-                    width="30"
-                    xmlns="http://www.w3.org/2000/svg"
-                    id="arrow-horizontal"
-                  >
-                    <path
-                      transform="translate(30)"
-                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                      data-name="Path 10"
-                      id="Path_10"
-                    ></path>
-                  </svg>
-                </button>
-                <p className=" text-[1em] mr-4">2023</p>
-              </div>
-              <div className="noise"></div>
+          <li className="card border-t-[2px] p-0 border-[#ffffff26]  rounded-[32px] bg-black" id="card1">
+            <div className=" flex justify-between items-center py-2  mx-auto    z-50 w-[90%] ">
+              <button className="cta w-fit flex justify-center  text-white ">
+                <span className="hover-underline-animation ">
+                  {" "}
+                  View Project{" "}
+                </span>
+                <svg
+                  className=" fill-white mt-1"
+                  viewBox="0 0 46 16"
+                  height="10"
+                  width="30"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="arrow-horizontal"
+                >
+                  <path
+                    transform="translate(30)"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    data-name="Path 10"
+                    id="Path_10"
+                  ></path>
+                </svg>
+              </button>
+              <p className=" text-[1em] mr-4">2023</p>
+            </div>
+            <div className=" p-[30px] relative overflow-hidden  rounded-[20px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
               <Image
                 src={
                   "https://images.unsplash.com/photo-1681301865120-7c74657dc01a?q=80&w=1407&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -69,33 +67,144 @@ function Cards() {
               />
             </div>
           </li>
-          <li className="card" id="card2">
+          <li className="card border-t-[2px] border-[#ffffff26]  bg-black rounded-[32px]" id="card2">
+            <div className=" flex justify-between items-center py-2 mx-auto  z-50 w-[90%] ">
+              <button className="cta w-fit flex justify-center   text-white ">
+                <span className="hover-underline-animation ">
+                  {" "}
+                  View Project{" "}
+                </span>
+                <svg
+                  className=" fill-white mt-1"
+                  viewBox="0 0 46 16"
+                  height="10"
+                  width="30"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="arrow-horizontal"
+                >
+                  <path
+                    transform="translate(30)"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    data-name="Path 10"
+                    id="Path_10"
+                  ></path>
+                </svg>
+              </button>
+              <p className=" text-[1em] mr-4">2023</p>
+            </div>
+            <div className=" p-[30px] relative overflow-hidden  rounded-[20px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
+              <Image
+                src={
+                  "https://images.unsplash.com/photo-1595123550441-d377e017de6a?q=80&w=1606&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                alt="featured_mobile_banner"
+                fill
+                draggable="false"
+                className=" hover:grayscale  object-cover w-auto mx-auto hover:scale-105 transition-all duration-500 ease-in-out"
+              />
+            </div>
+          </li>
+          <li className="card border-t-[2px] border-[#ffffff26]  bg-black rounded-[32px]" id="card3">
+            <div className=" flex justify-between items-center py-2 mx-auto  z-50 w-[90%] ">
+              <button className="cta w-fit flex justify-center   text-white ">
+                <span className="hover-underline-animation ">
+                  {" "}
+                  View Project{" "}
+                </span>
+                <svg
+                  className=" fill-white mt-1"
+                  viewBox="0 0 46 16"
+                  height="10"
+                  width="30"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="arrow-horizontal"
+                >
+                  <path
+                    transform="translate(30)"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    data-name="Path 10"
+                    id="Path_10"
+                  ></path>
+                </svg>
+              </button>
+              <p className=" text-[1em] mr-4">2023</p>
+            </div>
+            <div className=" p-[30px] relative overflow-hidden  rounded-[20px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
+              <Image
+                src={
+                  "https://images.unsplash.com/photo-1678705544977-0d0b86a8b5f9?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                alt="featured_mobile_banner"
+                fill
+                draggable="false"
+                className=" hover:grayscale  object-cover w-auto mx-auto hover:scale-105 transition-all duration-500 ease-in-out"
+              />
+            </div>
+          </li>
+          <li className="card border-t-[2px] border-[#ffffff26]  bg-black rounded-[32px]" id="card4">
+            <div className=" flex justify-between items-center py-2 mx-auto  z-50 w-[90%] ">
+              <button className="cta w-fit flex justify-center   text-white ">
+                <span className="hover-underline-animation ">
+                  {" "}
+                  View Project{" "}
+                </span>
+                <svg
+                  className=" fill-white mt-1"
+                  viewBox="0 0 46 16"
+                  height="10"
+                  width="30"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="arrow-horizontal"
+                >
+                  <path
+                    transform="translate(30)"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    data-name="Path 10"
+                    id="Path_10"
+                  ></path>
+                </svg>
+              </button>
+              <p className=" text-[1em] mr-4">2023</p>
+            </div>
+            <div className=" p-[30px] relative overflow-hidden  rounded-[20px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
+              <Image
+                src={
+                  "https://images.unsplash.com/photo-1701743805124-dde90e4df301?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                }
+                alt="featured_mobile_banner"
+                fill
+                draggable="false"
+                className=" hover:grayscale  object-cover w-auto mx-auto hover:scale-105 transition-all duration-500 ease-in-out"
+              />
+            </div>
+          </li>
+          {/* <li  className="card" id="card2">
             <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-              <div className=" flex justify-between items-center  absolute top-5 z-50 w-[90%] ">
-                <button className="cta w-fit flex justify-center mb-2  text-white ">
-                  <span className="hover-underline-animation ">
-                    {" "}
-                    View Project{" "}
-                  </span>
-                  <svg
-                    className=" fill-white mt-1"
-                    viewBox="0 0 46 16"
-                    height="10"
-                    width="30"
-                    xmlns="http://www.w3.org/2000/svg"
-                    id="arrow-horizontal"
-                  >
-                    <path
-                      transform="translate(30)"
-                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                      data-name="Path 10"
-                      id="Path_10"
-                    ></path>
-                  </svg>
-                </button>
-                <p className=" text-[1em] mr-4">2023</p>
-              </div>
-              <div className="noise"></div>
+            <div className=" flex justify-between items-center  absolute top-5 z-50 w-[90%] ">
+              <button className="cta w-fit flex justify-center mb-2  text-white ">
+                <span className="hover-underline-animation ">
+                  {" "}
+                  View Project{" "}
+                </span>
+                <svg
+                  className=" fill-white mt-1"
+                  viewBox="0 0 46 16"
+                  height="10"
+                  width="30"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="arrow-horizontal"
+                >
+                  <path
+                    transform="translate(30)"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    data-name="Path 10"
+                    id="Path_10"
+                  ></path>
+                </svg>
+              </button>
+              <p className=" text-[1em] mr-4">2023</p>
+            </div>
+            <div className="noise"></div>
               <Image
                 src={
                   "https://images.unsplash.com/photo-1595123550441-d377e017de6a?q=80&w=1606&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -107,33 +216,33 @@ function Cards() {
               />
             </div>
           </li>
-          <li className="card" id="card3">
+          <li  className="card" id="card3">
             <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-              <div className=" flex justify-between items-center  absolute top-5 z-50 w-[90%] ">
-                <button className="cta w-fit flex justify-center mb-2  text-white ">
-                  <span className="hover-underline-animation ">
-                    {" "}
-                    View Project{" "}
-                  </span>
-                  <svg
-                    className=" fill-white mt-1"
-                    viewBox="0 0 46 16"
-                    height="10"
-                    width="30"
-                    xmlns="http://www.w3.org/2000/svg"
-                    id="arrow-horizontal"
-                  >
-                    <path
-                      transform="translate(30)"
-                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                      data-name="Path 10"
-                      id="Path_10"
-                    ></path>
-                  </svg>
-                </button>
-                <p className=" text-[1em] mr-4">2023</p>
-              </div>
-              <div className="noise"></div>
+            <div className=" flex justify-between items-center  absolute top-5 z-50 w-[90%] ">
+              <button className="cta w-fit flex justify-center mb-2  text-white ">
+                <span className="hover-underline-animation ">
+                  {" "}
+                  View Project{" "}
+                </span>
+                <svg
+                  className=" fill-white mt-1"
+                  viewBox="0 0 46 16"
+                  height="10"
+                  width="30"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="arrow-horizontal"
+                >
+                  <path
+                    transform="translate(30)"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    data-name="Path 10"
+                    id="Path_10"
+                  ></path>
+                </svg>
+              </button>
+              <p className=" text-[1em] mr-4">2023</p>
+            </div>
+            <div className="noise"></div>
               <Image
                 src={
                   "https://images.unsplash.com/photo-1678705544977-0d0b86a8b5f9?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -145,33 +254,33 @@ function Cards() {
               />
             </div>
           </li>
-          <li className="card" id="card4">
+          <li  className="card" id="card4">
             <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-              <div className=" flex justify-between items-center  absolute top-5 z-50 w-[90%] ">
-                <button className="cta w-fit flex justify-center mb-2  text-white ">
-                  <span className="hover-underline-animation ">
-                    {" "}
-                    View Project{" "}
-                  </span>
-                  <svg
-                    className=" fill-white mt-1"
-                    viewBox="0 0 46 16"
-                    height="10"
-                    width="30"
-                    xmlns="http://www.w3.org/2000/svg"
-                    id="arrow-horizontal"
-                  >
-                    <path
-                      transform="translate(30)"
-                      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                      data-name="Path 10"
-                      id="Path_10"
-                    ></path>
-                  </svg>
-                </button>
-                <p className=" text-[1em] mr-4">2023</p>
-              </div>
-              <div className="noise"></div>
+            <div className=" flex justify-between items-center  absolute top-5 z-50 w-[90%] ">
+              <button className="cta w-fit flex justify-center mb-2  text-white ">
+                <span className="hover-underline-animation ">
+                  {" "}
+                  View Project{" "}
+                </span>
+                <svg
+                  className=" fill-white mt-1"
+                  viewBox="0 0 46 16"
+                  height="10"
+                  width="30"
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="arrow-horizontal"
+                >
+                  <path
+                    transform="translate(30)"
+                    d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                    data-name="Path 10"
+                    id="Path_10"
+                  ></path>
+                </svg>
+              </button>
+              <p className=" text-[1em] mr-4">2023</p>
+            </div>
+            <div className="noise"></div>
               <Image
                 src={
                   "https://images.unsplash.com/photo-1701743805124-dde90e4df301?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -182,7 +291,7 @@ function Cards() {
                 className="hover:grayscale object-cover w-auto mx-auto hover:scale-105 transition-all duration-500 ease-in-out"
               />
             </div>
-          </li>
+          </li> */}
         </ul>
         {/* <ul id="cards">
         <li ref={container} className="card" id="card1">

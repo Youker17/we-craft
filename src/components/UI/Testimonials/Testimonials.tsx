@@ -76,7 +76,7 @@ function Testimonials() {
 
 
   return (
-    <>
+    <div className=' my-24'>
      <Header>
        <MaskText phrases={["Testimonails"]} tag="h1" />
        <MaskText phrases={["Experience the future of banking with RAFT. We're",'here to empower your financial journey.',]} tag="p" />
@@ -94,7 +94,7 @@ function Testimonials() {
     >
       {testimonials.map((testimonial, idx) => (
         <li
-          className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-700 px-8 py-6 md:w-[450px]"
+          className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-[rgba(218, 218, 218, 0.2)] px-8 py-6 md:w-[450px]"
           style={{
             background:
               "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
@@ -124,7 +124,7 @@ function Testimonials() {
       ))}
     </ul>
   </div>   
-    </>
+    </div>
  
   )
 }

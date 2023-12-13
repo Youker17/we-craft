@@ -1,1 +1,1 @@
-import grained from 'grained';
+declare module 'flipjs';

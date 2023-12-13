@@ -30,9 +30,9 @@ function NewCards() {
       </Header>
       <div className="cards-container">
         <ul id="cards">
-        
-          <li  className="card" id="card1">
-          <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
+
+          <li className="card" id="card1">
+            <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
               <button className="cta w-fit flex justify-center mb-2  text-white ">
                 <span className="hover-underline-animation ">
                   {" "}
@@ -56,8 +56,8 @@ function NewCards() {
               </button>
               <p className=" text-[1em] mr-4">2023</p>
             </div>
-            <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-            <div className="noise"></div>
+            <div className=" p-[30px] relative overflow-hidden rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
+              {/* <div className="noise"></div> */}
               <Image
                 src={
                   "https://images.unsplash.com/photo-1681301865120-7c74657dc01a?q=80&w=1407&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -69,8 +69,8 @@ function NewCards() {
               />
             </div>
           </li>
-          <li  className="card" id="card2">
-          <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
+          <li className="card" id="card2">
+            <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
               <button className="cta w-fit flex justify-center mb-2  text-white ">
                 <span className="hover-underline-animation ">
                   {" "}
@@ -95,7 +95,7 @@ function NewCards() {
               <p className=" text-[1em] mr-4">2023</p>
             </div>
             <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-            <div className="noise"></div>
+              {/* <div className="noise"></div> */}
               <Image
                 src={
                   "https://images.unsplash.com/photo-1595123550441-d377e017de6a?q=80&w=1606&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -107,8 +107,8 @@ function NewCards() {
               />
             </div>
           </li>
-          <li  className="card" id="card3">
-          <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
+          <li className="card" id="card3">
+            <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
               <button className="cta w-fit flex justify-center mb-2  text-white ">
                 <span className="hover-underline-animation ">
                   {" "}
@@ -133,7 +133,7 @@ function NewCards() {
               <p className=" text-[1em] mr-4">2023</p>
             </div>
             <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-            <div className="noise"></div>
+              {/* <div className="noise"></div> */}
               <Image
                 src={
                   "https://images.unsplash.com/photo-1678705544977-0d0b86a8b5f9?q=80&w=1404&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -145,8 +145,8 @@ function NewCards() {
               />
             </div>
           </li>
-          <li  className="card" id="card4">
-          <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
+          <li className="card" id="card4">
+            <div className=" flex justify-between items-center z-50 w-[90%] mx-auto ">
               <button className="cta w-fit flex justify-center mb-2  text-white ">
                 <span className="hover-underline-animation ">
                   {" "}
@@ -171,7 +171,7 @@ function NewCards() {
               <p className=" text-[1em] mr-4">2023</p>
             </div>
             <div className=" p-[30px] relative overflow-hidden  rounded-[50px] h-[80vh] flex justify-center items-center transition-all duration-300 bg-[#2e2e2e] ">
-            <div className="noise"></div>
+              {/* <div className="noise"></div> */}
               <Image
                 src={
                   "https://images.unsplash.com/photo-1701743805124-dde90e4df301?q=80&w=1450&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

@@ -38,11 +38,11 @@ const Featured = () => {
               <Image
                 src={featured_mobile_banner}
                 alt="featured_mobile_banner"
-                className='hover:grayscale transition-all ease-in-out duration-300'
+                className='pulse__animation hover:grayscale transition-all ease-in-out duration-300'
                 fill
               />
             ) : (
-              <Image src={big_banner} alt="big_banner" fill  className='hover:grayscale transition-all ease-in-out duration-500' />
+              <Image src={big_banner} alt="big_banner" fill  className='pulse__animation hover:grayscale transition-all ease-in-out duration-500' />
             )}
           </Div>
         </ImageContainer>
