@@ -78,34 +78,17 @@ function Services() {
                   Digital-First Branding
                 </h1>
                 <p className=" font-[1.7rem]">
-                  In today&apos;s digital world, your brand has to shine across
-                  screens. We build brands that not only look great but also
-                  resonate with your target audience. From logo design to
-                  content strategy, our digital-first approach ensures
-                  consistency, engagement, and a distinctive presence that sets
-                  you apart.
+                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. In assumenda cumque aperiam ad architecto ducimus, rem facere id. Ipsa dolorum accusamus neque labore sit, exercitationem doloremque alias reprehenderit et amet.
+                 Eveniet alias accusamus laudantium maxime, itaque eum perspiciatis tempora dicta? Doloremque iste modi architecto totam animi? Rem nostrum natus hic neque aliquam officiis fugiat, porro odio amet ducimus, dolore pariatur.
+                 Consequatur aut molestias explicabo aliquam dolorem, quibusdam nemo, perferendis tempore cupiditate deleniti assumenda dolorum a debitis distinctio harum maxime magni quisquam dicta earum laborum laudantium quidem! Sunt minima assumenda dolore.
                 </p>
               </div>
             </div>
-            <div className="flex flex-col mt-10">
-              <div className=" flex gap-4 flex-col">
-                <h1 className=" leading-normal uppercase text-3xl font-normal">
-                  Functional & Fun Interface Design
-                </h1>
-                <p className={twMerge("font-[1.7rem]")}>
-                  In today&apos;s digital world, your brand has to shine across
-                  screens. We build brands that not only look great but also
-                  resonate with your target audience. From logo design to
-                  content strategy, our digital-first approach ensures
-                  consistency, engagement, and a distinctive presence that sets
-                  you apart.
-                </p>
-              </div>
-            </div>
+            
           </div>
           <Link
             href="#_"
-            className="relative inline-flex mt-32 items-center justify-start  w-fit px-5 py-3 overflow-hidden font-bold rounded-full group/btn"
+            className="relative inline-flex mt-10 items-center justify-start  w-fit px-5 py-3 overflow-hidden font-bold rounded-full group/btn"
           >
             <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
             <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover/btn:-translate-x-8"></span>
